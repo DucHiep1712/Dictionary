@@ -1,0 +1,8 @@
+hello	xin chao
+dog	con cho
+cat	con meo
+house	ngoi nha
+book	quyen sach
+transport	van chuyen
+translate	phien dich
+transform	bien doi
