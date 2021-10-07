@@ -1,9 +1,0 @@
-No 	 | English 	 | Vietnamese
-1 	 | hello 	 | xin chao
-2 	 | dog 	 | con cho
-3 	 | cat 	 | con meo
-4 	 | house 	 | ngoi nha
-5 	 | book 	 | quyen sach
-6 	 | transport 	 | van chuyen
-7 	 | translate 	 | phien dich
-8 	 | transform 	 | bien doi
