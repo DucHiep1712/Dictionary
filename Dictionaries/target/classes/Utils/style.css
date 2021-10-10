@@ -17,6 +17,10 @@
     -fx-font-weight: bold;
 }
 
+#definitionText {
+    -fx-font-style: normal;
+}
+
 .definition-text {
     -fx-font-weight: bold;
     -fx-font-style: italic;

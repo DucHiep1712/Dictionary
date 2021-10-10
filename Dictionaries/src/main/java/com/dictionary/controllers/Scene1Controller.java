@@ -76,7 +76,7 @@ public class Scene1Controller implements Initializable {
             public void changed(ObservableValue<? extends String> observableValue, String s, String t1) {
 
                 current = myListView.getSelectionModel().getSelectedItem();
-                definitionText.setText("Definition: " + holder.get(current));
+                definitionText.setText(holder.get(current));
             }
         });
     }
