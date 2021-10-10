@@ -1,0 +1,57 @@
+@font-face {
+    src: url("/utils/fonts/Poppins-Regular.ttf");
+}
+
+.root {
+    -fx-background-color: linear-gradient(to top right, #FFEDD3, #FF5C58);
+}
+
+#body {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, #484242, 10.0, 0.0, 0.0, 0.0);
+}
+
+#group6 {
+    -fx-font-weight: bold;
+}
+
+.definition-text {
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-text-fill: #807e7a;
+}
+
+.list-cell {
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+    -fx-font-size: 14;
+    -fx-text-fill: #807e7a;
+    -fx-border-width: 1;
+    -fx-border-color: #c4c4c4;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-background-color: transparent;
+    -fx-focus-color: transparent;
+}
+
+.list-cell:even, .list-cell:odd{
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0;
+}
+
+.list-cell:even{
+    -fx-background-color: #FFDEDE;
+}
+
+.list-cell:odd {
+    -fx-background-color: #fff4d1;
+}
+
+.list-cell:filled:hover,
+.list-cell:filled:selected{
+    -fx-background-color: linear-gradient(to top left, #FFEDD3, #FF5C58);
+    -fx-text-fill: white;
+}
