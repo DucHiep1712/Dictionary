@@ -12,6 +12,7 @@ public class DictionaryCommandline {
      * Ham in du lieu ra man hinh.
      */
     public void showAllWords() {
+
         int count = 1;
         System.out.println("\nNo \t | English \t\t\t | Vietnamese");
         for (Word w : Dictionary.listWord) {
@@ -32,6 +33,7 @@ public class DictionaryCommandline {
      * Ham goi main 1.
      */
     public void dictionaryBasic() {
+
         dManagement.insertFromCommandline();
         this.showAllWords();
     }
@@ -42,12 +44,13 @@ public class DictionaryCommandline {
      * @throws IOException catch error
      */
     public void dictionaryAdvanced() throws FileNotFoundException, IOException {
+
         dManagement.insertFromFile();
-        //dManagement.dictionaryLookup();
-        //dManagement.insertWord();
-        //dManagement.removeWord();
-        //dManagement.modifyWord();
-        //this.dictionarySearcher();
+//        dManagement.dictionaryLookup();
+//        dManagement.insertWord();
+//        dManagement.removeWord();
+//        dManagement.modifyWord();
+        this.dictionarySearcher();
         dManagement.dictionaryExportToFile();
         this.showAllWords();
     }
@@ -57,6 +60,7 @@ public class DictionaryCommandline {
      * Vi du: tra -> transport, translate, transform,...
      */
     public void dictionarySearcher() {
+
         System.out.print("Nhap tu can tra cuu: ");
         Scanner scanner = new Scanner(System.in);
         String stringWord = scanner.nextLine();

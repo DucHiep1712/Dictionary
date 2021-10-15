@@ -12,6 +12,7 @@ public class DictionaryManagement {
      * Ham nhap du lieu tu ban phim.
      */
     public void insertFromCommandline() {
+
         Scanner scanner = new Scanner(System.in);
         int numberOfWord;
         System.out.print("Nhap so luong tu: ");
@@ -29,36 +30,17 @@ public class DictionaryManagement {
 
     /**
      * Ham lay du lieu tu file dictionaries.txt.
+     *
      * @throws FileNotFoundException catch error
      */
     public void insertFromFile() throws FileNotFoundException {
+
         Scanner scanner = new Scanner(new File(pathIn));
         while (scanner.hasNext()) {
-            String stringWord = scanner.nextLine();
-//            Scanner scan = new Scanner(stringWord).useDelimiter("s*\ts*");
-            String temp1 = "";
-            String temp2 = "";
-            int i;
-
-            for (i = 0; i < stringWord.length(); i++) {
-                if (stringWord.charAt(i) == ' ') {
-                    break;
-                }
-                temp1 += stringWord.charAt(i);
-            }
-
-            for (; i < stringWord.length(); i++) {
-                if (stringWord.charAt(i) != ' ') {
-                    break;
-                }
-            }
-
-            for (; i < stringWord.length(); i++) {
-                temp2 += stringWord.charAt(i);
-            }
+            Scanner scan = new Scanner(scanner.nextLine()).useDelimiter("\t");
             Word myWord = new Word();
-            myWord.setWord_target(temp1);
-            myWord.setWord_explain(temp2);
+            myWord.setWord_target(scan.next());
+            myWord.setWord_explain(scan.next());
             Dictionary.listWord.add(myWord);
         }
     }
@@ -67,6 +49,7 @@ public class DictionaryManagement {
      * Ham tra cuu tu vung.
      */
     public void dictionaryLookup() {
+
         String stringWord = "";
         System.out.print("Nhap tu muon tra cuu: ");
         Scanner scanner = new Scanner(System.in);
@@ -80,10 +63,12 @@ public class DictionaryManagement {
 
     /**
      * Ham them tu vung.
+     *
      * @throws FileNotFoundException catch error
-     * @throws IOException catch error
+     * @throws IOException           catch error
      */
     public void insertWord() throws FileNotFoundException, IOException {
+
         System.out.print("Nhap tu can them: ");
         Scanner scanner = new Scanner(System.in);
         String addWord = scanner.nextLine();
@@ -106,10 +91,12 @@ public class DictionaryManagement {
 
     /**
      * Ham xoa tu vung.
+     *
      * @throws FileNotFoundException catch error
-     * @throws IOException catch error
+     * @throws IOException           catch error
      */
     public void removeWord() throws FileNotFoundException, IOException {
+
         String undoWord;
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhap tu can xoa: ");
@@ -132,10 +119,12 @@ public class DictionaryManagement {
 
     /**
      * Ham sua doi tu vung.
+     *
      * @throws FileNotFoundException catch error
-     * @throws IOException catch error
+     * @throws IOException           catch error
      */
     public void modifyWord() throws FileNotFoundException, IOException {
+
         System.out.print("Nhap tu can sua: ");
         Scanner scanner = new Scanner(System.in);
         String editWord = scanner.nextLine();
@@ -161,8 +150,9 @@ public class DictionaryManagement {
 
     /**
      * Ham xuat du lieu ra file dictionaries_new.txt.
+     *
      * @throws FileNotFoundException catch error
-     * @throws IOException catch error
+     * @throws IOException           catch error
      */
     public void dictionaryExportToFile() throws FileNotFoundException, IOException {
 
