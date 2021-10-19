@@ -33,7 +33,7 @@
 
 }
 
-#tooltip1, #tooltip2, #tooltip3 {
+#tooltip1, #tooltip2, #tooltip3, #tooltip {
 /*    -fx-background-radius: 10;*/
 /*    -fx-border-radius: 10;*/
     /*-fx-background-color: rgba(0, 0, 0, 0.5);*/
@@ -52,7 +52,7 @@
     -fx-font-weight: 700;
 }
 
-#homeBtn, #fixBtn, #ggBtn {
+#homeBtn, #fixBtn, #ggBtn, #soundBtn {
     -fx-content-display: none;
     -fx-background-color: transparent;
     /*-fx-background-insets: 0;*/
