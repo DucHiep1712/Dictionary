@@ -1,9 +1,10 @@
 module com.dictionary {
     requires javafx.controls;
     requires javafx.fxml;
+    requires freetts;
 
-    opens com.dictionary.controllers to javafx.fxml;
-    opens com.dictionary.functions;
-    exports com.dictionary.controllers;
-    exports com.dictionary.functions;
+    opens dictionary.controllers to javafx.fxml;
+    opens dictionary.functions;
+    exports dictionary.controllers;
+    exports dictionary.functions;
 }
