@@ -1,5 +1,7 @@
 package com.dictionary.controllers;
 
+import com.sun.speech.freetts.Voice;
+import com.sun.speech.freetts.VoiceManager;
 import com.dictionary.functions.Dictionary;
 import com.dictionary.functions.DictionaryManagement;
 import com.dictionary.functions.Word;
@@ -23,6 +25,9 @@ import java.util.stream.Collectors;
 import static javafx.fxml.FXMLLoader.NULL_KEYWORD;
 
 public class Scene2Controller implements Initializable {
+    public ImageView searchIcon;
+    public Tooltip tooltip;
+    public Button soundBtn;
     @FXML
     private ListView<String> myListView = new ListView<>();
 
@@ -38,6 +43,9 @@ public class Scene2Controller implements Initializable {
     private DictionaryManagement dictionaryManagement = new DictionaryManagement();
 
     ObservableList<String> list = FXCollections.observableArrayList();
+    
+    VoiceManager freettsVM;
+    Voice freettsVoice;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -49,6 +57,7 @@ public class Scene2Controller implements Initializable {
         }
 
         definitionText.setVisible(false);
+        soundBtn.setVisible(false);
 
         setList();
 
@@ -59,6 +68,19 @@ public class Scene2Controller implements Initializable {
                 definitionText.setVisible(true);
                 current = myListView.getSelectionModel().getSelectedItem();
                 definitionText.setText("- " + dictionary.searchWord(current));
+                
+                soundBtn.setVisible(true);
+                tooltip.setShowDelay(Duration.seconds(0.25));
+
+                System.setProperty("mbrola.base", "C:/Users/ASUS/Dictionary1/mbrola");
+                System.setProperty("freetts.voices", "de.dfki.lt.freetts.en.us.MbrolaVoiceDirectory");
+                freettsVM = VoiceManager.getInstance();
+
+                freettsVoice = freettsVM.getVoice("mbrola_us1");
+
+                freettsVoice.allocate();
+
+                soundBtn.setOnAction(event -> freettsVoice.speak(current));
             }
         });
 
