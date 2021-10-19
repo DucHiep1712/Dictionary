@@ -1,9 +1,0 @@
-No 	 | English 			 | Vietnamese
-1 	 | hair 			 | tóc
-2 	 | dog 				 | con chó
-3 	 | cat 				 | con mèo
-4 	 | car 				 | xe bốn bánh
-5 	 | bus 				 | xe buýt
-6 	 | cooker 			 | nồi cơm
-7 	 | keyboard 		 | bàn phím
-8 	 | telephone 		 | điện thoại di động
