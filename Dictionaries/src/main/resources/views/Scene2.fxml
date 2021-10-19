@@ -54,5 +54,17 @@
             <Font size="22.0" />
          </font>
       </Label>
+      <Button fx:id="soundBtn" layoutX="639.0" layoutY="82.0" mnemonicParsing="false" prefHeight="8.0" prefWidth="38.0" styleClass="function-icons" text="Sound effect" textFill="TRANSPARENT">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" styleClass="function-icons">
+                    <image>
+                        <Image url="@../utils/icons/sound-icon.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <tooltip>
+                <Tooltip fx:id="tooltip" text="Phát âm" />
+            </tooltip>
+        </Button>
    </children>
 </AnchorPane>
