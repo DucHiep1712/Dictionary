@@ -12,7 +12,6 @@ public class DictionaryManagement {
      * Ham nhap du lieu tu ban phim.
      */
     public void insertFromCommandline() {
-
         Scanner scanner = new Scanner(System.in);
         int numberOfWord;
         System.out.print("Nhap so luong tu: ");
@@ -34,7 +33,6 @@ public class DictionaryManagement {
      * @throws FileNotFoundException catch error
      */
     public void insertFromFile() throws FileNotFoundException {
-
         Scanner scanner = new Scanner(new File(pathIn));
         while (scanner.hasNext()) {
             Scanner scan = new Scanner(scanner.nextLine()).useDelimiter("\t");
@@ -49,7 +47,6 @@ public class DictionaryManagement {
      * Ham tra cuu tu vung.
      */
     public void dictionaryLookup() {
-
         String stringWord = "";
         System.out.print("Nhap tu muon tra cuu: ");
         Scanner scanner = new Scanner(System.in);
@@ -68,7 +65,6 @@ public class DictionaryManagement {
      * @throws IOException           catch error
      */
     public void insertWord() throws FileNotFoundException, IOException {
-
         System.out.print("Nhap tu can them: ");
         Scanner scanner = new Scanner(System.in);
         String addWord = scanner.nextLine();
@@ -96,7 +92,6 @@ public class DictionaryManagement {
      * @throws IOException           catch error
      */
     public void removeWord() throws FileNotFoundException, IOException {
-
         String undoWord;
         Scanner scanner = new Scanner(System.in);
         System.out.print("Nhap tu can xoa: ");
@@ -124,7 +119,6 @@ public class DictionaryManagement {
      * @throws IOException           catch error
      */
     public void modifyWord() throws FileNotFoundException, IOException {
-
         System.out.print("Nhap tu can sua: ");
         Scanner scanner = new Scanner(System.in);
         String editWord = scanner.nextLine();
@@ -155,7 +149,6 @@ public class DictionaryManagement {
      * @throws IOException           catch error
      */
     public void dictionaryExportToFile() throws FileNotFoundException, IOException {
-
         FileOutputStream fileOutputStream = new FileOutputStream(pathOut);
         try (BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream)) {
             int count = 1;

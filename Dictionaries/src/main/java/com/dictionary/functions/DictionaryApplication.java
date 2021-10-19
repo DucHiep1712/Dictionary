@@ -17,17 +17,14 @@ public class DictionaryApplication extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/views/Scene1.fxml")));
+        Parent root = FXMLLoader.load(getClass().getResource("/views/Scene1.fxml"));
         String style = this.getClass().getResource("/utils/style.css").toExternalForm();
 
         Scene scene = new Scene(root);
         scene.getStylesheets().add(style);
 
-        stage.setTitle("dictionary");
-        stage.getIcons().add(new Image("/utils/icons/dictionary-icon.png"));
-        stage.setWidth(800);
-        stage.setHeight(690);
+        stage.setTitle("Dictionary");
+        stage.getIcons().add(new Image(DictionaryApplication.class.getResourceAsStream("/utils/icons/dictionary-icon.png")));
         stage.setScene(scene);
         stage.show();
     }
