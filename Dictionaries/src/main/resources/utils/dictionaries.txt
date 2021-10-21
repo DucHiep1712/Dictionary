@@ -1,3 +1,16 @@
 ballon	quả bóng bay
 eye	mắt
 keyboard	bàn phím
+pronunciation	cách phát âm
+can	cái lon
+cake	bánh ngọt
+mouse	con chuột
+dog	con chó
+cat	con mèo
+fish	con cá
+clock	đồng hồ
+tree	cây
+forest	rừng
+lake	hồ
+valley	thung lũng
+headphone	tai nghe

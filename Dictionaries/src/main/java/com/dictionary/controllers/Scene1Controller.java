@@ -65,6 +65,13 @@ public class Scene1Controller implements Initializable {
             }
         });
 
+        ggBtn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                showComponent("/views/Scene4.fxml");
+            }
+        });
+
         this.showComponent("/views/Scene2.fxml");
     }
 }
