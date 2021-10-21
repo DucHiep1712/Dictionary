@@ -52,10 +52,14 @@
     -fx-font-weight: 700;
 }
 
+<<<<<<< Updated upstream
 #homeBtn, #fixBtn, #ggBtn {
+=======
+#homeBtn, #fixBtn, #ggBtn, #soundBtn, #switchContainer, #cancelBtn {
+>>>>>>> Stashed changes
     -fx-content-display: none;
     -fx-background-color: transparent;
-    /*-fx-background-insets: 0;*/
+    -fx-cursor: hand;
 }
 
 #definitionText, #addWordLabel, #removeWordLabel {
@@ -70,6 +74,40 @@
 
 #alertAddExist, #alertAddEmpty, #alertAddExplainEmpty, #alertRemoveNotExist, #alertRemoveEmpty {
     -fx-text-fill: #fc3c42;
+}
+
+#srcLangField {
+    -fx-background-radius: 0 0 0 7;
+    -fx-border-radius: 0 0 0 7;
+}
+
+#toLangField {
+    -fx-background-radius: 0 0 7 0;
+    -fx-border-radius: 0 0 7 0;
+}
+
+#srcLangChoice, #toLangChoice {
+    -fx-background-color: transparent;
+    -fx-background-radius: 50%;
+    -fx-border-radius: 50%;
+    -fx-cursor: hand;
+}
+
+#srcLangChoice:hover,
+#toLangChoice:hover {
+    -fx-background-color: rgba(0, 0, 0, 0.1);
+}
+
+.vip {
+    -fx-text-fill: #FF5C58;
+}
+
+.gg-header {
+    -fx-background-color: rgba(255, 249, 211, 0.96);
+    -fx-background-radius: 7 7 0 0;
+    -fx-border-radius: 7 7 0 0;
+    -fx-border-color: black;
+    -fx-border-width: 1;
 }
 
 .definition-text {

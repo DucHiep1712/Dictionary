@@ -75,7 +75,7 @@ public class Scene3Controller implements Initializable {
             }
         });
 
-        //Khi bam nut
+        //Khi bam nut them tu
         addWordBtn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
@@ -114,6 +114,7 @@ public class Scene3Controller implements Initializable {
             }
         });
 
+        //Khi bam nut xoa tu
         removeWordBtn.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

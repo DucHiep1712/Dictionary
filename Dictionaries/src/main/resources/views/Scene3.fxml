@@ -85,9 +85,9 @@
             <Image url="@../utils/icons/coding-bro.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="69.0" fitWidth="60.0" layoutX="598.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true" rotate="28.6">
+      <ImageView fitHeight="69.0" fitWidth="60.0" layoutX="622.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true" rotate="28.6">
          <image>
-            <Image url="@../utils/icons/question-mark.png" />
+            <Image url="@../utils/icons/question-mark.gif" />
          </image>
       </ImageView>
       <Label fx:id="alertAddSuccess" contentDisplay="RIGHT" layoutX="121.0" layoutY="104.0" prefHeight="27.0" prefWidth="146.0" style="-fx-font-weight: bold;" text="Thêm từ thành công">

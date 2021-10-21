@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="497.0" prefWidth="782.0" stylesheets="@../utils/style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dictionary.controllers.Scene4Controller">
+   <children>
+      <Button fx:id="translateBtn" layoutX="362.0" layoutY="297.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" styleClass="adjust-btn" text="Dịch" />
+      <TextArea fx:id="srcLangField" layoutX="19.0" layoutY="73.0" prefHeight="210.0" prefWidth="373.0" promptText="Nhập từ bạn cần tìm ở đây...">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="toLangField" editable="false" layoutX="391.0" layoutY="73.0" prefHeight="210.0" prefWidth="373.0" promptText="Bản dịch...">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="cancelBtn" layoutX="347.0" layoutY="73.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="13.0" styleClass="function-icons">
+         <graphic>
+            <ImageView fitHeight="80.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../utils/icons/cancel-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Pane layoutX="19.0" layoutY="29.0" prefHeight="45.0" prefWidth="745.0" styleClass="gg-header">
+         <children>
+            <Button fx:id="switchContainer" layoutX="351.0" layoutY="2.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="36.0">
+               <graphic>
+                  <ImageView fx:id="switchOn" fitHeight="28.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../utils/icons/data-transfer.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label fx:id="toLang" layoutX="505.0" layoutY="9.0" styleClass="definition-text" text="Vietnamese">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="srcLangChoice" layoutX="319.0" layoutY="5.0" prefHeight="32.0" prefWidth="32.0" />
+            <ChoiceBox fx:id="toLangChoice" layoutX="699.0" layoutY="6.0" prefHeight="32.0" prefWidth="32.0" />
+            <Label fx:id="srcLang" layoutX="152.0" layoutY="9.0" styleClass="definition-text" text="English">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="175.0" fitWidth="184.0" layoutX="554.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../utils/icons/sharing.gif" />
+         </image>
+      </ImageView>
+      <Circle fill="#4b4b4b" layoutX="508.0" layoutY="465.0" radius="23.0" stroke="#4b4b4b" strokeType="INSIDE" translateZ="-1.0">
+         <rotationAxis>
+            <Point3D z="-1.0" />
+         </rotationAxis>
+      </Circle>
+      <ImageView fitHeight="150.0" fitWidth="503.0" layoutX="63.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../utils/icons/text-input.png" />
+         </image>
+         <rotationAxis>
+            <Point3D z="10.0" />
+         </rotationAxis>
+      </ImageView>
+      <Label layoutX="75.0" layoutY="350.0" prefHeight="73.0" prefWidth="418.0" styleClass="definition-text" text="Từ điển siêu cấp vip pro của nhóm 6!">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <rotationAxis>
+            <Point3D z="10.0" />
+         </rotationAxis>
+      </Label>
+      <Circle fill="#4b4b4b" layoutX="460.0" layoutY="461.0" radius="18.0" stroke="#4b4b4b" strokeType="INSIDE" />
+      <Circle fill="#4b4b4b" layoutX="38.0" layoutY="335.0" radius="16.0" stroke="#4b4b4b" strokeType="INSIDE" />
+      <Circle fill="#4b4b4b" layoutX="75.0" layoutY="328.0" radius="9.0" stroke="#4b4b4b" strokeType="INSIDE" />
+      <Circle fill="#4b4b4b" layoutX="43.0" layoutY="366.0" radius="5.0" stroke="#4b4b4b" strokeType="INSIDE" />
+      <ImageView fitHeight="113.0" fitWidth="113.0" layoutX="19.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../utils/icons/cat.png" />
+         </image>
+      </ImageView>
+      <Circle fill="#4b4b4b" layoutX="418.0" layoutY="470.0" radius="16.0" stroke="#4b4b4b" strokeType="INSIDE" />
+      <Circle fill="#4b4b4b" layoutX="380.0" layoutY="484.0" radius="12.0" stroke="#4b4b4b" strokeType="INSIDE" />
+      <Circle fill="#4b4b4b" layoutX="341.0" layoutY="484.0" radius="9.0" stroke="#4b4b4b" strokeType="INSIDE" />
+      <Circle fill="#4b4b4b" layoutX="315.0" layoutY="472.0" radius="5.0" stroke="#4b4b4b" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
