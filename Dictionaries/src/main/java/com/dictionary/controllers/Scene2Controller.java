@@ -64,6 +64,8 @@ public class Scene2Controller implements Initializable {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+    
+        dictionaryManagement.insertFromMySQL();
 
         definitionText.setVisible(false);
 
