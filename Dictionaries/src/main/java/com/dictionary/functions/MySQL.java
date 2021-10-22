@@ -1,4 +1,4 @@
-package dictionary.functions;
+package com.dictionary.functions;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
