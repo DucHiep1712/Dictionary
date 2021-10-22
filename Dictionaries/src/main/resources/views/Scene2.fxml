@@ -58,7 +58,7 @@
       </Label>
 <<<<<<< Updated upstream
 =======
-      <Button fx:id="soundBtn" layoutX="647.0" layoutY="68.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="48.0" rotate="180.0" styleClass="function-icons" text="Sound effect" textFill="TRANSPARENT">
+      <Button fx:id="soundBtn" layoutX="647.0" layoutY="8.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="48.0" rotate="180.0" styleClass="function-icons" text="Sound effect" textFill="TRANSPARENT">
          <graphic>
             <ImageView fitHeight="43.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" styleClass="function-icons">
                <image>
