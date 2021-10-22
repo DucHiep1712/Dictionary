@@ -58,12 +58,13 @@ public class Scene2Controller implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        try {
-            dictionary.listWord.clear();
+        dictionary.listWord.clear();
+    
+        /*try {
             dictionaryManagement.insertFromFile();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-        }
+        }*/
     
         dictionaryManagement.insertFromMySQL();
 
