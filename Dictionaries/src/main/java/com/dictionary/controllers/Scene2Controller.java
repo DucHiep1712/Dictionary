@@ -24,8 +24,6 @@ import java.util.stream.Collectors;
 import static javafx.fxml.FXMLLoader.NULL_KEYWORD;
 
 public class Scene2Controller implements Initializable {
-<<<<<<< Updated upstream
-=======
 
     @FXML
     public Tooltip tooltip;
@@ -33,12 +31,11 @@ public class Scene2Controller implements Initializable {
     @FXML
     public Button soundBtn;
 
->>>>>>> Stashed changes
     @FXML
     private ListView<String> myListView = new ListView<>();
 
     @FXML
-    private Label definitionText;
+    private TextArea definitionText;
 
     @FXML
     private TextField searchBox;
@@ -49,26 +46,27 @@ public class Scene2Controller implements Initializable {
     private DictionaryManagement dictionaryManagement = new DictionaryManagement();
 
     ObservableList<String> list = FXCollections.observableArrayList();
-<<<<<<< Updated upstream
-=======
 
     VoiceManager freettsVM;
     Voice freettsVoice;
->>>>>>> Stashed changes
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        dictionary.listWord.clear();
-    
-        /*try {
+<<<<<<< Updated upstream
+        try {
+            dictionary.listWord.clear();
             dictionaryManagement.insertFromFile();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
-        }*/
-    
-        dictionaryManagement.insertFromMySQL();
+        }
+=======
+//        dictionary.listWord.clear();
+        definitionText.setEditable(false);
+        if (dictionary.listWord.isEmpty()) dictionaryManagement.insertFromMySQL();
+>>>>>>> Stashed changes
 
         definitionText.setVisible(false);
+        soundBtn.setVisible(false);
 
         setList();
 
@@ -76,11 +74,6 @@ public class Scene2Controller implements Initializable {
         myListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observableValue, String s, String t1) {
-<<<<<<< Updated upstream
-                definitionText.setVisible(true);
-                current = myListView.getSelectionModel().getSelectedItem();
-                definitionText.setText("- " + dictionary.searchWord(current));
-=======
                 try {
                     definitionText.setVisible(true);
                     current = myListView.getSelectionModel().getSelectedItem();
@@ -102,7 +95,6 @@ public class Scene2Controller implements Initializable {
                 catch (Exception e) {
                     System.out.println(":D");
                 }
->>>>>>> Stashed changes
             }
         });
 

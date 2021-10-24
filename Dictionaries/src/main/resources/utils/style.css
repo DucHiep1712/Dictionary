@@ -33,7 +33,16 @@
 
 }
 
-#tooltip1, #tooltip2, #tooltip3 {
+#definitionText {
+    -fx-border-color: white;
+}
+
+#definitionText .content {
+    -fx-background-color: white;
+    -fx-border-color: white;
+}
+
+#tooltip1, #tooltip2, #tooltip3, #tooltip {
 /*    -fx-background-radius: 10;*/
 /*    -fx-border-radius: 10;*/
     /*-fx-background-color: rgba(0, 0, 0, 0.5);*/
@@ -52,11 +61,7 @@
     -fx-font-weight: 700;
 }
 
-<<<<<<< Updated upstream
-#homeBtn, #fixBtn, #ggBtn {
-=======
 #homeBtn, #fixBtn, #ggBtn, #soundBtn, #switchContainer, #cancelBtn {
->>>>>>> Stashed changes
     -fx-content-display: none;
     -fx-background-color: transparent;
     -fx-cursor: hand;
@@ -98,8 +103,16 @@
     -fx-background-color: rgba(0, 0, 0, 0.1);
 }
 
-.vip {
-    -fx-text-fill: #FF5C58;
+.choice-box {
+    -fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+.choice-box .menu-item:focused,
+.choice-box .menu-item:hover {
+    -fx-background-color: #7e93ff;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
 }
 
 .gg-header {
@@ -129,13 +142,13 @@
     -fx-focus-color: transparent;
 }
 
-.list-cell:even, .list-cell:odd{
+.list-cell:even, .list-cell:odd {
     -fx-border-width: 0;
     -fx-background-radius: 0;
     -fx-border-radius: 0;
 }
 
-.list-cell:even{
+.list-cell:even {
     -fx-background-color: #FFDEDE;
 }
 

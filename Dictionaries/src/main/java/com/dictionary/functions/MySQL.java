@@ -12,7 +12,7 @@ public class MySQL {
         Connection connection;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            String baseUrl = "jdbc:mysql://localhost/dictionary1";
+            String baseUrl = "jdbc:mysql://localhost/edict";
             String userName = "root";
             String passWord = "";
             connection = DriverManager.getConnection(baseUrl, userName, passWord);
