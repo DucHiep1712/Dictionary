@@ -42,6 +42,17 @@ public class DictionaryManagement {
             Dictionary.listWord.add(myWord);
         }
     }
+<<<<<<< Updated upstream
+=======
+
+    /**
+     * Ham lay du lieu tu MySQL.
+     */
+    public void insertFromMySQL() {
+        MySQL mySQL = new MySQL();
+        mySQL.getConnection(Dictionary.listWord);
+    }
+>>>>>>> Stashed changes
 
     /**
      * Ham tra cuu tu vung.

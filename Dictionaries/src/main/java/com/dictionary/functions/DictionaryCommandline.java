@@ -42,14 +42,19 @@ public class DictionaryCommandline {
      * @throws IOException catch error
      */
     public void dictionaryAdvanced() throws FileNotFoundException, IOException {
+<<<<<<< Updated upstream
         dManagement.insertFromFile();
+=======
+//        dManagement.insertFromFile();
+        dManagement.insertFromMySQL();
+>>>>>>> Stashed changes
 //        dManagement.dictionaryLookup();
 //        dManagement.insertWord();
 //        dManagement.removeWord();
 //        dManagement.modifyWord();
-        this.dictionarySearcher();
-        dManagement.dictionaryExportToFile();
-        this.showAllWords();
+//        this.dictionarySearcher();
+//        dManagement.dictionaryExportToFile();
+//        this.showAllWords();
     }
 
     /**
